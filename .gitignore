@@ -1,0 +1,5 @@
+DB_HOST= "aqui va el host de la base de datos"
+DB_PORT= "aqui va el puerto de la base de datos"
+DB_NAME= "aqui va el usuario de la base de datos"
+DB_USER= "aqui va el nombre de la base de datos"
+DB_PASSWORD= "aqui va la contraseña de la base de datos"
