@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../models/Producto.php';
+require_once __DIR__ . '/../models/producto.php';
 
 class ProductoController {
 
@@ -7,6 +7,6 @@ class ProductoController {
         $producto = new Producto();
         $productos = $producto->getAll();
 
-        require_once __DIR__ . '/../views/index.php';
+        require_once __DIR__ . '/../views/producto/index.php';
     }
 }

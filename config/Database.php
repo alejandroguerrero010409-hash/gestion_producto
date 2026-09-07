@@ -21,11 +21,9 @@ class Database {
 
     public function connect() {
         try {
-            
             $dsn = "mysql:host={$this->host};port={$this->port};dbname={$this->dbName};charset=utf8mb4";
             $this->connection = new PDO($dsn, $this->user, $this->password);
         } catch (PDOException $e) {
-            
             $dsn = "mysql:host=127.0.0.1;dbname={$this->dbName};charset=utf8mb4";
             $this->connection = new PDO($dsn, $this->user, $this->password);
         }

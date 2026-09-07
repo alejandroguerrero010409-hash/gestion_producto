@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../config/Database.php';
 
-class Producto {
+class Proveedor {
 
     private $connection;
 
@@ -11,11 +11,10 @@ class Producto {
     }
 
     public function getAll() {
-        $sql = "SELECT * FROM gestioProducto";
+        $sql = "SELECT * FROM proveedores";
 
         $consulta = $this->connection->query($sql);
         return $consulta->fetchAll(PDO::FETCH_ASSOC);
     }
 }
-
-
+    
