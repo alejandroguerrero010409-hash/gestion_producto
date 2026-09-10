@@ -11,7 +11,9 @@ class Producto {
     }
 
     public function getAll() {
-        $sql = "SELECT * FROM gestioProducto";
+        $sql = "SELECT p.id, p.nombre, p.precio, p.cantidad, pr.nombre AS proveedor 
+                FROM gestioproducto p 
+                LEFT JOIN proveedores pr ON p.id_proveedor = pr.id";
 
         $consulta = $this->connection->query($sql);
         return $consulta->fetchAll(PDO::FETCH_ASSOC);

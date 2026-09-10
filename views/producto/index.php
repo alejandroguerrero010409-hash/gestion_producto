@@ -5,12 +5,14 @@
         <th>nombre</th>
         <th>precio</th>
         <th>cantidad</th>
+        <th>proveedor</th>
     </tr>
     <?php foreach ($productos as $producto): ?>
         <tr>
             <td><?= $producto['nombre'] ?></td>
             <td><?= $producto['precio'] ?></td>
             <td><?= $producto['cantidad'] ?></td>
+            <td><?= $producto['proveedor'] ?></td>
         </tr>
     <?php endforeach; ?>
 </table>

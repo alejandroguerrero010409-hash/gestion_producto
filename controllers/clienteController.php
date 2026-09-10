@@ -1,10 +1,14 @@
+
 <?php
-require_once __DIR__ . '/../models/cliente.php';
 
-class ClienteController {
+require_once __DIR__ . '/../models/Cliente.php';
 
-    public function index() {
+class ClienteController
+{
+    public function index()
+    {
         $cliente = new Cliente();
+
         $clientes = $cliente->getAll();
 
         require_once __DIR__ . '/../views/cliente/index.php';
