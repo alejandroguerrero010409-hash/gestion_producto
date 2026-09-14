@@ -3,6 +3,7 @@
 require_once __DIR__ . "/../controllers/productoController.php";
 require_once __DIR__ . "/../controllers/clienteController.php";
 require_once __DIR__ . "/../controllers/proveedorController.php";
+require_once __DIR__ . "/../controllers/categoriaController.php";
 
 
 $productoController = new ProductoController();
@@ -14,6 +15,8 @@ $clienteController->index();
 $proveedorController = new ProveedorController();
 $proveedorController->index();
 
+$categoriaController = new CategoriaController();
+$categoriaController->index();
 
 
 

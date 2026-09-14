@@ -11,7 +11,7 @@ class Cliente {
     }
 
     public function getAll() {
-        $sql = "SELECT * FROM clientes";
+        $sql = "SELECT * FROM cliente";
 
         $consulta = $this->connection->query($sql);
         return $consulta->fetchAll(PDO::FETCH_ASSOC);
