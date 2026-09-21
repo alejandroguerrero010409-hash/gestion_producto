@@ -12,7 +12,7 @@ class ProductoController
         $productos = $producto->getAll();
 
         // 2. Obtiene un producto en específico por ID (ejemplo: ID 1)
-        $producto_consulta = $producto->getById(4);
+        $producto_consulta = $producto->getById(5);
 
         require_once __DIR__ . '/../views/producto/index.php';
     }
